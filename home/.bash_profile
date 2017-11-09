@@ -31,6 +31,7 @@ alias ls='ls -GFh'
 proxy on
 
 export PATH=~/scripts:~/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export JAVA_HOME="$(/usr/libexec/java_home)"
 
 
