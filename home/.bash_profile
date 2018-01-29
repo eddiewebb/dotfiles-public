@@ -3,9 +3,9 @@
 
 ##
 #
-#  IMPORTANT - Nothing here should be secret/sensitive.  
+#  IMPORTANT - Nothing here should be secret/sensitive.
 #.    Use an alternate and private repo for that
-# 
+#
 ##
 
 # like this..
@@ -28,11 +28,12 @@ alias ls='ls -GFh'
 
 
 #turn on lm proxy by default
-proxy on
+proxy off
+
+#jenv enbales mult java to be co-existent.
+export JENV_ROOT=/usr/local/opt/jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 export PATH=~/scripts:~/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export JAVA_HOME="$(/usr/libexec/java_home)"
-
-
-
+# set by jenv export JAVA_HOME="$(/usr/libexec/java_home)"
