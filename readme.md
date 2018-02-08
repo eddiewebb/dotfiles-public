@@ -17,6 +17,8 @@ drwxr-xr-x     7 n0158588  wheel      238 Oct 25 10:21 dotfiles-secrets  # <- gi
 
 Supports nested/overlapping folders as well.  This allows a user for instance to have both private and shared contents in a `~/scripts/` folder.
 
+**Pro tip** Consider keybase for encrypted private git repo for sensitive files.
+
 ```
 LIBP45P-31715DD:dotfiles n0158588$ ls -la ~/scripts/
 lrwxr-xr-x   1 n0158588  staff    51B Oct 27 15:26 ngrok@ -> /Users/n0158588/dotfiles-secrets/home/scripts/ngrok
@@ -28,7 +30,7 @@ lrwxr-xr-x   1 n0158588  staff    46B Oct 27 15:26 proxy.sh@ -> /Users/n0158588/
 1) Just fork this repo as you would normally, then...
 2) Replace my specific dotfiles with your own, and commit then to your fork
 ```
-git clone [YOUR repo URL] 
+git clone [YOUR repo URL]
 cd dotfiles
 # remove my files entirely or selectively
 rm -Rf home/* home/.*
@@ -49,7 +51,7 @@ git push
 
 ```
 cd ~
-git clone [YOUR repo URL] 
+git clone [YOUR repo URL]
 bash dotfiles/install.sh
 ```
 
@@ -68,4 +70,3 @@ mv [.dotfilename or folder] ~/dotfiles/home
 git commit -am"added new file [.dotfilename or folder]"
 git push
 ```
-
