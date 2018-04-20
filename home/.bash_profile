@@ -12,14 +12,10 @@ source ~/.bash_secrets  # lives in seperate repo, restricted to only eddie.
 
 
 source .bash_prompt
-
+source /usr/local/etc/profile.d/z.sh
 
 # aliases]
-alias composer='composer.phar'
-alias atl-cln-run='unset https_proxy && atlas-clean -P atlassian-sdk && atlas-run -P atlassian-sdk'
-alias atl-run='unset https_proxy && atlas-run -P atlassian-sdk'
 alias cal='date +%m\ %Y | xargs cal'
-alias lamp='mysql.server start && sudo httpd -k start'
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias ls='ls -GFh'
 

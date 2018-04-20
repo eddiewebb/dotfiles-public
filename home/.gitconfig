@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Eddie Webb
+	email = ollitech@gmail.com
+[core]
+	excludesfile = /Users/eddie/.gitignore_global
+[credential]
+	helper = osxkeychain
+[core]
+	editor = /usr/bin/vim
