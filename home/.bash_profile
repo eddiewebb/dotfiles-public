@@ -11,7 +11,12 @@ source ~/.bash_secrets  # lives in seperate repo, restricted to only eddie.
 
 
 
-source .bash_prompt
+source ~/.bash_prompt
+
+HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
 source /usr/local/etc/profile.d/z.sh
 
 # aliases]
@@ -27,5 +32,10 @@ export JENV_ROOT=/usr/local/opt/jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 export PATH=~/scripts:~/bin:/usr/local/sbin:/usr/local/bin:$PATH
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:/Users/eddie/Library/Python/3.6/bin:$PATH"
+
+export GOPATH=/Users/eddie/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 # set by jenv export JAVA_HOME="$(/usr/libexec/java_home)"

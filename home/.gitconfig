@@ -9,3 +9,5 @@
 	helper = osxkeychain
 [core]
 	editor = /usr/bin/vim
+[url "ssh://git@github.com"]
+	insteadOf = https://github.com
