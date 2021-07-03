@@ -11,8 +11,11 @@ source ~/.bash_secrets  # lives in seperate repo, restricted to only eddie.
 
 
 HISTCONTROL=ignoredups:erasedups
-shopt -s histappend
-PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+setopt APPEND_HISTORY
+setopt histignoredups
+#precmd() {
+#	history -n; history -w; history -c; history -r
+#}
 
 source /usr/local/etc/profile.d/z.sh
 
