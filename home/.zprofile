@@ -10,9 +10,6 @@
 source ~/.bash_secrets  # lives in seperate repo, restricted to only eddie.
 
 
-
-source ~/.bash_prompt
-
 HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
