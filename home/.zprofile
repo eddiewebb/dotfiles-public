@@ -23,6 +23,7 @@ source /usr/local/etc/profile.d/z.sh
 alias cal='date +%m\ %Y | xargs cal'
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias ls='ls -GFh'
+alias cci='circleci'
 
 # add any keys in .ssh
 grep -slR "PRIVATE" ~/.ssh/ | xargs ssh-add
